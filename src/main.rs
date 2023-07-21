@@ -3,6 +3,10 @@ mod ownership;
 mod structs;
 mod enums;
 
+pub mod garden;
+
+use crate::garden::vegetables::Asparagus;
+
 use std::io;
 use crate::ownership::ownership_learn;
 
@@ -82,4 +86,10 @@ fn main() {
 
     println!("-------------- structs __________________");
     structs::main();
+
+    println!("-------------- enums --------------------");
+    enums::main();
+
+    println!("-------------- crate --------------------");
+    let _ = Asparagus {};
 }
