@@ -2,8 +2,11 @@ mod functions;
 mod ownership;
 mod structs;
 mod enums;
+mod collections;
 
 pub mod garden;
+mod error_handling;
+mod generic;
 
 use crate::garden::vegetables::Asparagus;
 
@@ -92,4 +95,13 @@ fn main() {
 
     println!("-------------- crate --------------------");
     let _ = Asparagus {};
+
+    println!("-------------- collections --------------");
+    collections::main();
+
+    println!("-------------- error_handling -----------");
+    error_handling::main();
+
+    println!("-------------- generic ------------------");
+    generic::main();
 }
